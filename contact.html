@@ -1,0 +1,38 @@
+<html>
+   <head>
+     <style>
+       h1{
+           background-color:#FF69B4;
+           color:#00FFFF;
+            }
+       *{font-size:30px;}
+       body{
+           background-image:url({{url_for('static', filename='bulitin/car1.jpg')}});
+           background-size:cover;
+           color:#FBF8BE;
+           background-color:#234E70
+         }
+         a{
+           color:lightgreen;
+          }
+     </style>
+     
+   </head>
+   <body>
+     <center>
+       <h1> Contact us Page </h1>
+        <a href="{{url_for("home")}}">Back</a>
+       <p>
+       Address
+         <br/>
+       205 Rock Street
+         <br/>
+       Suite 101,
+         <br/>
+       LA, CA 89999  
+          <br>
+      +1-5555-99999 
+       </p>
+     </center>
+   </body>
+</html>

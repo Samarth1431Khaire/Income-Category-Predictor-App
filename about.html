@@ -1,0 +1,35 @@
+<html>
+   <head>
+     <style>
+       h1{
+           background-color:#FF69B4;
+           color:#00FFFF;
+            }
+       *{font-size:30px;}
+       body{
+           background-image:url({{url_for('static', filename='bulitin/car1.jpg')}});
+           background-size:cover;
+           color:#FBF8BE;
+           background-color:#234E70
+         }
+        a{
+           color:lightgreen;
+          }
+     </style>
+      
+     
+   </head>
+   <body>
+        
+     <center>
+       <h1> About us Page </h1>
+        <a href="{{url_for("home")}}">Back</a>
+       <p>
+        Our app is used by customers to check their financial status to check their income and spending score to know and control their Finances.
+        The information provided to you is our identity. We are serving from last five years. Our app is loved by people for the reason it is free.
+        We have observed that the people on our app are increasing day by day to control their finances. More to that many apps in the market are charging
+        of fees from their customer base.
+        </p>
+     </center>
+   </body>
+</html>

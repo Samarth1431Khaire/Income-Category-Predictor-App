@@ -1,0 +1,78 @@
+<html>
+  <head>
+    <title> App By Samarth </title>
+    <style>
+       *{font-size:30px;}
+       body{
+           background-image:url({{url_for('static', filename='bulitin/car1.jpg')}});
+           background-size:cover;
+           color:#FBF8BE;
+           background-color:#234E70
+         }
+         h1{
+           
+           color:#FBF8BE;
+            }
+         .btn{border-radius:30px;
+          color:#00FFFF;
+          background-color:#FF69B4;}
+         
+          .nav{
+            background-color:#FF69B4;
+            
+            }
+
+          .nav a{
+            color:#00FFFF;
+            text-decoration: None;
+            padding:100px;
+           }
+
+
+        
+       
+    </style>
+    
+  </head>
+   
+  <body >
+         <center>
+           <div class="nav">
+          
+     <a href="/contact">Contact Us</a>
+     <a href="/about">About us</a>
+         
+             
+             </div>
+         </center>
+        
+       
+       <center>
+        <h1> Income Category Predictor </h1>
+            
+             
+               <br/>
+        
+               
+         <form method="POST">
+         
+             
+          <input type="number" name="a" placeholder="enter ur annual income(k)" min="15" max="137" step="any"   required />
+             <br/><br/>
+          <input type="number" name="s" placeholder="enter ur spending score" min="1" max="99" step="any"    required />
+             <br/><br/>
+          
+          
+         
+          <input type="submit" name="action" value="predict" class="btn"/>
+          </form>
+         
+          <form method="POST">
+          <input type="submit" name="action" value="Logout" class="btn" style="position:absolute; top:50px; right:80px"/>
+          </form>
+        
+         {{msg}}
+      </center>
+  </body>
+  </div>
+</html>
